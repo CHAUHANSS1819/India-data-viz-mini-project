@@ -5,7 +5,7 @@ import streamlit as st
 
 st.set_page_config(layout='wide')
 
-df = pd.read_csv(r"C:\Users\saura\OneDrive\Desktop\Datasets\india.csv")
+df = pd.read_csv("india.csv")
 
 list_of_states = list(df['State'].unique())
 list_of_states.insert(0,'Overall India')
